@@ -113,13 +113,6 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "87e42d02-158f-472f-8635-c1dbdbfdc518",
-      "comment": "",
-      "command": "assertText",
-      "target": "css=a.content",
-      "targets": [],
-      "value": "Cart:\\n3 item(s) - $60"
-    }, {
       "id": "20f1b180-7d8d-44fb-b159-d9ffb2856cfa",
       "comment": "",
       "command": "click",
@@ -237,13 +230,54 @@
         ["xpath=//a[contains(.,'<< Back')]", "xpath:innerText"]
       ],
       "value": ""
-    }, {
-      "id": "ec311ae3-1f28-4efa-adc0-5c2dd67f74b5",
+    }]
+  }, {
+    "id": "2597b9ce-cf4a-4185-9f4f-cd49f8868c09",
+    "name": "Menu",
+    "commands": [{
+      "id": "25695730-be4d-45e3-92b5-f6d4d1f85890",
       "comment": "",
-      "command": "assertText",
-      "target": "css=a.content",
+      "command": "open",
+      "target": "/en/",
       "targets": [],
-      "value": "Cart:\\n0 item(s) - $0"
+      "value": ""
+    }, {
+      "id": "d86dcc8f-6863-4a65-ae46-829b49ff7f50",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x784",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2f9a93ce-f567-4b9f-a53b-893cb840be86",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Rubber Ducks",
+      "targets": [
+        ["linkText=Rubber Ducks", "linkText"],
+        ["css=.category-1:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Rubber Ducks')]", "xpath:link"],
+        ["xpath=//nav[@id='site-menu']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://litecart.stqa.ru/en/rubber-ducks-c-1/']", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Rubber Ducks')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "25a9f207-f054-431d-9ae7-409a35ab8481",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Subcategory",
+      "targets": [
+        ["linkText=Subcategory", "linkText"],
+        ["css=.category-2 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Subcategory')]", "xpath:link"],
+        ["xpath=//nav[@id='site-menu']/ul/li[2]/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://litecart.stqa.ru/en/rubber-ducks-c-1/subcategory-c-2/']", "xpath:href"],
+        ["xpath=//li[2]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Subcategory')]", "xpath:innerText"]
+      ],
+      "value": ""
     }]
   }],
   "suites": [{
