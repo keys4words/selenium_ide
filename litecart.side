@@ -40,19 +40,6 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "844ab924-0cd7-46ae-bcf1-d4ae18981c98",
-      "comment": "",
-      "command": "type",
-      "target": "name=quantity",
-      "targets": [
-        ["name=quantity", "name"],
-        ["css=.quantity > input", "css:finder"],
-        ["xpath=//input[@name='quantity']", "xpath:attributes"],
-        ["xpath=//div[@id='box-product']/div[2]/div[2]/div[5]/form/table/tbody/tr/td/input", "xpath:idRelative"],
-        ["xpath=//div[5]/form/table/tbody/tr/td/input", "xpath:position"]
-      ],
-      "value": "2"
-    }, {
       "id": "751c8931-7b02-41de-89ce-f69404f62e26",
       "comment": "",
       "command": "click",
@@ -70,13 +57,7 @@
       "comment": "",
       "command": "type",
       "target": "name=quantity",
-      "targets": [
-        ["name=quantity", "name"],
-        ["css=.quantity > input", "css:finder"],
-        ["xpath=//input[@name='quantity']", "xpath:attributes"],
-        ["xpath=//div[@id='box-product']/div[2]/div[2]/div[5]/form/table/tbody/tr/td/input", "xpath:idRelative"],
-        ["xpath=//div[5]/form/table/tbody/tr/td/input", "xpath:position"]
-      ],
+      "targets": [],
       "value": "3"
     }, {
       "id": "1e351ecb-f716-4854-95ad-9c5513f6a1e5",
@@ -244,6 +225,147 @@
       "target": "css=a.content",
       "targets": [],
       "value": "Cart:\\n0 item(s) - $0"
+    }]
+  }, {
+    "id": "c69fcfca-6378-439e-a24b-f90ac4cce223",
+    "name": "bing",
+    "commands": [{
+      "id": "f49f4db1-4870-4d3d-ae99-0eb2de81c626",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.bing.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6564e5a5-b481-4058-be92-0d6fb2c9f3cd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "900x691",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "97b7deb2-7bff-4fa6-8c96-d2d1833fdef6",
+      "comment": "",
+      "command": "type",
+      "target": "id=sb_form_q",
+      "targets": [
+        ["id=sb_form_q", "id"],
+        ["name=q", "name"],
+        ["css=#sb_form_q", "css:finder"],
+        ["xpath=//input[@id='sb_form_q']", "xpath:attributes"],
+        ["xpath=//form[@id='sb_form']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "selenium"
+    }, {
+      "id": "c31f1609-d5da-4e08-82c5-4335465086ef",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=sb_form_q",
+      "targets": [
+        ["id=sb_form_q", "id"],
+        ["name=q", "name"],
+        ["css=#sb_form_q", "css:finder"],
+        ["xpath=//input[@id='sb_form_q']", "xpath:attributes"],
+        ["xpath=//form[@id='sb_form']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }]
+  }, {
+    "id": "641b7aac-b2ca-4d78-a154-d2162de19ecf",
+    "name": "search",
+    "commands": [{
+      "id": "04541917-273d-4c7a-82f0-01dcd08c8f52",
+      "comment": "",
+      "command": "open",
+      "target": "/en/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1b364b9c-e06e-456c-9b34-ce1b1ccd44e9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "900x691",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a3af9753-89d9-404f-b77e-aa889d218625",
+      "comment": "",
+      "command": "click",
+      "target": "name=query",
+      "targets": [
+        ["name=query", "name"],
+        ["css=.input-wrapper > input", "css:finder"],
+        ["xpath=//input[@name='query']", "xpath:attributes"],
+        ["xpath=//div[@id='box-search']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1372f16b-5f1d-42f8-9c24-81d0d0301258",
+      "comment": "",
+      "command": "type",
+      "target": "name=query",
+      "targets": [
+        ["name=query", "name"],
+        ["css=.input-wrapper > input", "css:finder"],
+        ["xpath=//input[@name='query']", "xpath:attributes"],
+        ["xpath=//div[@id='box-search']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "grin"
+    }, {
+      "id": "ab215142-592d-46f2-9784-8cd08a7c8710",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=query",
+      "targets": [],
+      "value": "${KEY_ENTER}"
+    }]
+  }, {
+    "id": "e56fcb3e-5a89-483d-b86d-12e660bb39cd",
+    "name": "masked form",
+    "commands": [{
+      "id": "fc58791c-8fe9-46ff-ad71-3570817b8c39",
+      "comment": "",
+      "command": "open",
+      "target": "http://estelle.github.io/input-masking/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f4e38827-a5f6-4121-a7ca-07340b87ec48",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "812x768",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3a7a7628-7e29-4453-9b1b-be8d4ac28ee6",
+      "comment": "",
+      "command": "click",
+      "target": "id=zip",
+      "targets": [
+        ["id=zip", "id"],
+        ["name=zipcode", "name"],
+        ["css=#zip", "css:finder"],
+        ["xpath=//input[@id='zip']", "xpath:attributes"],
+        ["xpath=//li[2]/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "da382ec7-871a-466f-8517-fff9903b7435",
+      "comment": "",
+      "command": "type",
+      "target": "id=zip",
+      "targets": [
+        ["id=zip", "id"],
+        ["name=zipcode", "name"],
+        ["css=#zip", "css:finder"],
+        ["xpath=//input[@id='zip']", "xpath:attributes"],
+        ["xpath=//li[2]/span/input", "xpath:position"]
+      ],
+      "value": "dsfasd"
     }]
   }],
   "suites": [{
