@@ -345,6 +345,25 @@
         ["xpath=//li[5]/a", "xpath:position"]
       ],
       "value": ""
+    }, {
+      "id": "ce8511ce-9d9e-4ee6-b41c-24787e7d181d",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//h1[contains(.,'Search Results for \"duck\"')]",
+      "targets": [
+        ["css=.title:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='box-search-results']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Search Results for \"duck\"')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0a1b8e0e-3d36-4f01-aba9-95503c1fc1ec",
+      "comment": "",
+      "command": "assertValue",
+      "target": "name=query",
+      "targets": [],
+      "value": "duck"
     }]
   }, {
     "id": "e56fcb3e-5a89-483d-b86d-12e660bb39cd",
