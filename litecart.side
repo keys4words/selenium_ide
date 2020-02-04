@@ -58,7 +58,7 @@
       "command": "type",
       "target": "name=quantity",
       "targets": [],
-      "value": "3"
+      "value": "1"
     }, {
       "id": "1e351ecb-f716-4854-95ad-9c5513f6a1e5",
       "comment": "",
@@ -72,6 +72,13 @@
         ["xpath=//div[5]/form/table/tbody/tr/td/input", "xpath:position"]
       ],
       "value": ""
+    }, {
+      "id": "abb40e10-2a1e-4de6-9187-dbeeeeb96936",
+      "comment": "",
+      "command": "storeText",
+      "target": "//span[@itemprop=\"price\"]",
+      "targets": [],
+      "value": "price"
     }, {
       "id": "b55117ca-18cd-4fc7-b3f2-f987fdaacede",
       "comment": "",
@@ -104,7 +111,7 @@
       "command": "assertText",
       "target": "css=a.content",
       "targets": [],
-      "value": "Cart:\\n3 item(s) - $60"
+      "value": "Cart:\\n1 item(s) - ${price}"
     }, {
       "id": "20f1b180-7d8d-44fb-b159-d9ffb2856cfa",
       "comment": "",
@@ -308,6 +315,13 @@
       ],
       "value": ""
     }, {
+      "id": "00c01218-58e9-4b3e-a74c-21fcb981ad40",
+      "comment": "",
+      "command": "store",
+      "target": "duck",
+      "targets": [],
+      "value": "query"
+    }, {
       "id": "1372f16b-5f1d-42f8-9c24-81d0d0301258",
       "comment": "",
       "command": "type",
@@ -319,7 +333,7 @@
         ["xpath=//div[@id='box-search']/div/form/div/input", "xpath:idRelative"],
         ["xpath=//input", "xpath:position"]
       ],
-      "value": "duck"
+      "value": "${query}"
     }, {
       "id": "ab215142-592d-46f2-9784-8cd08a7c8710",
       "comment": "",
@@ -327,6 +341,20 @@
       "target": "name=query",
       "targets": [],
       "value": "${KEY_ENTER}"
+    }, {
+      "id": "68f271e9-01f8-49df-b5e1-08c63c41741c",
+      "comment": "",
+      "command": "storeXpathCount",
+      "target": "css=ul.products li.product:nth-child(6)",
+      "targets": [],
+      "value": "count"
+    }, {
+      "id": "be2ecb6e-4582-46c3-8c11-57ce9bb5d051",
+      "comment": "",
+      "command": "assert",
+      "target": "count",
+      "targets": [],
+      "value": "5"
     }, {
       "id": "68740288-4575-46bb-af57-783b89b502af",
       "comment": "",
@@ -354,7 +382,7 @@
       "id": "ce8511ce-9d9e-4ee6-b41c-24787e7d181d",
       "comment": "",
       "command": "assertElementPresent",
-      "target": "xpath=//h1[contains(.,'Search Results for \"duck\"')]",
+      "target": "xpath=//h1[contains(.,'Search Results for \"${query}\"')]",
       "targets": [
         ["css=.title:nth-child(2)", "css:finder"],
         ["xpath=//div[@id='box-search-results']/h1", "xpath:idRelative"],
@@ -368,7 +396,7 @@
       "command": "assertValue",
       "target": "name=query",
       "targets": [],
-      "value": "duck"
+      "value": "${query}"
     }]
   }, {
     "id": "e56fcb3e-5a89-483d-b86d-12e660bb39cd",
